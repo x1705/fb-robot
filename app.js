@@ -1213,6 +1213,7 @@ function addPersistentMenu(){
       "locale":"zh_CN",
       "composer_input_disabled":false
     }
+    ]
     }
 
 }, function(error, response, body) {
