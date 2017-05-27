@@ -1221,7 +1221,7 @@ function addPersistentMenu(){
         {
           "type":"web_url",
           "title":"Latest News",
-          "url":"http://petershats.parseapp.com/hat-news",
+          "url":"http://foxnews.com",
           "webview_height_ratio":"full"
         }
       ]
