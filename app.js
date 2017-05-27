@@ -731,7 +731,9 @@ function sendLocale(recipientId) {
  *
  */
 function sendRandomImage(recipientId) {
-    var http = require('http');
+    sendImageMessage(recipientId,"https://unsplash.it/400/600/?random");
+/*
+    var http = require('https');
     var options = {
 	    host: 'unsplash.it',
 	    path: '/400/600/?random'
@@ -773,6 +775,7 @@ function sendRandomImage(recipientId) {
     req.on('error', function(e) {
       console.log('ERROR: ' + e.message);
     });
+*/
 }
 
 /*
