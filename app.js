@@ -1175,6 +1175,7 @@ function addPersistentMenu(){
     qs: { access_token: PAGE_ACCESS_TOKEN },
     method: 'POST',
     json:{
+        setting_type : "call_to_actions",
         thread_state : "new_thread",
         persistent_menu:[
         {
