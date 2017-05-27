@@ -1176,6 +1176,7 @@ function addPersistentMenu(){
     method: 'POST',
     json:{
         setting_type : "call_to_actions",
+        thread_state : "new_thread",
         persistent_menu:[
         {
           "title":"My Account",
