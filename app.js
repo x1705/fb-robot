@@ -1175,9 +1175,11 @@ function addPersistentMenu(){
     qs: { access_token: PAGE_ACCESS_TOKEN },
     method: 'POST',
     json:{
-        setting_type : "call_to_actions",
-        thread_state : "new_thread",
-        persistent_menu:[
+"persistent_menu":[
+    {
+      "locale":"default",
+      "composer_input_disabled":true,
+      "call_to_actions":[
         {
           "title":"My Account",
           "type":"nested",
@@ -1198,8 +1200,19 @@ function addPersistentMenu(){
               "payload":"CONTACT_INFO_PAYLOAD"
             }
           ]
+        },
+        {
+          "type":"web_url",
+          "title":"Latest News",
+          "url":"http://petershats.parseapp.com/hat-news",
+          "webview_height_ratio":"full"
         }
-          ]
+      ]
+    },
+    {
+      "locale":"zh_CN",
+      "composer_input_disabled":false
+    }
     }
 
 }, function(error, response, body) {
