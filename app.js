@@ -1194,9 +1194,9 @@ function addPersistentMenu(){
     qs: { access_token: PAGE_ACCESS_TOKEN },
     method: 'POST',
     json:{
-        setting_type : "call_to_actions",
+        setting_type : "persistent_menu",
         thread_state : "new_thread",
-        call_to_actions:[
+        persistent_menu:[
         {
           "title":"My Account",
           "type":"nested",
