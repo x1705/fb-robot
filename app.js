@@ -1175,26 +1175,6 @@ function addPersistentMenu(){
     qs: { access_token: PAGE_ACCESS_TOKEN },
     method: 'POST',
     json:{
-        setting_type : "call_to_actions",
-        thread_state : "new_thread",
-  "get_started":{
-    "payload":"GET_STARTED_PAYLOAD"
-  }
- }
-}, function(error, response, body) {
-    console.log(response)
-    if (error) {
-        console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-        console.log('Error: ', response.body.error)
-    }
-})
- request({
-    url: 'https://graph.facebook.com/v2.6/me/thread_settings',
-    qs: { access_token: PAGE_ACCESS_TOKEN },
-    method: 'POST',
-    json:{
-        setting_type : "persistent_menu",
         thread_state : "new_thread",
         persistent_menu:[
         {
@@ -1217,22 +1197,7 @@ function addPersistentMenu(){
               "payload":"CONTACT_INFO_PAYLOAD"
             }
           ]
-        },
-            {
-              type:"postback",
-              title:"Home",
-              payload:"home"
-            },
-            {
-              type:"postback",
-              title:"Joke",
-              payload:"joke"
-            },
-            {
-              type:"web_url",
-              title:"DMS Software Website",
-              url:"http://www.dynamic-memory.com/"
-            }
+        }
           ]
     }
 
