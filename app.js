@@ -1175,8 +1175,6 @@ function addPersistentMenu(){
     qs: { access_token: PAGE_ACCESS_TOKEN },
     method: 'POST',
     json:{
-        setting_type : "call_to_actions",
-        thread_state : "existing_thread",
         persistent_menu:[
         {
           "title":"My Account",
