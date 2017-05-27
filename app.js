@@ -1177,7 +1177,7 @@ function addPersistentMenu(){
     json:{
         setting_type : "call_to_actions",
         thread_state : "new_thread",
-        persistent_menu:[
+        call_to_actions:[
         {
           "title":"My Account",
           "type":"nested",
