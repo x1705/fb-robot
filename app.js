@@ -732,50 +732,6 @@ function sendLocale(recipientId) {
  */
 function sendRandomImage(recipientId) {
     sendImageMessage(recipientId,"https://unsplash.it/400/600/?random");
-/*
-    var http = require('https');
-    var options = {
-	    host: 'unsplash.it',
-	    path: '/400/600/?random'
-       };
-
-
-    var req = http.get(options,function(res) {
-      //console.log('STATUS: ' + res.statusCode);
-      //console.log('HEADERS: ' + JSON.stringify(res.headers));
-
-      // Buffer the body entirely for processing as a whole.
-      var bodyChunks = [];
-      res.on('data', function(chunk) {
-        // You can process streamed parts here...
-        bodyChunks.push(chunk);
-      }).on('end', function() {
-        var body = Buffer.concat(bodyChunks);
-        // Parse html and look for image url
-        var bodyString = body.toString('utf8');
-
-        var index = bodyString.indexOf('src="http://gallery.photo.net/photo/');
-        //console.log(bodyString);
-        if(index > -1)
-        {
-           var startIndex = index+5;
-           //console.log(startIndex);
-           // look for the following quote that closes the src= tag
-
-           var endIndex =   startIndex + bodyString.substring(startIndex).indexOf('"');
-           if(endIndex > startIndex)
-           {
-               var url =  bodyString.substring(startIndex,endIndex);
-               //console.log(url);
-               sendImageMessage(recipientId,url);
-           }
-        }
-      })
-    });
-    req.on('error', function(e) {
-      console.log('ERROR: ' + e.message);
-    });
-*/
 }
 
 /*
