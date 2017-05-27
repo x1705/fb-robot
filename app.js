@@ -1175,6 +1175,7 @@ function addPersistentMenu(){
     qs: { access_token: PAGE_ACCESS_TOKEN },
     method: 'POST',
     json:{
+        setting_type : "menu",
 "persistent_menu":[
     {
       "locale":"default",
