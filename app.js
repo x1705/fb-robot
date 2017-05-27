@@ -1171,11 +1171,10 @@ function callGetLocaleAPI(event, handleReceived) {
 
 function addPersistentMenu(){
  request({
-    url: 'https://graph.facebook.com/v2.6/me/thread_settings',
+    url: 'https://graph.facebook.com/v2.6/me/messenger_profile',
     qs: { access_token: PAGE_ACCESS_TOKEN },
     method: 'POST',
     json:{
-        setting_type : "menu",
 "persistent_menu":[
     {
       "locale":"default",
