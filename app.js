@@ -1161,23 +1161,28 @@ function addPersistentMenu(){
           "payload":"HOME"
         },
         {
-          "title":"My Account",
+          "title":"Remove this menu",
+          "type":"postback",
+          "payload":"remove menu"
+        },
+        {
+          "title":"Nested Menu Example",
           "type":"nested",
           "call_to_actions":[
             {
-              "title":"Pay Bill",
+              "title":"Who am I",
               "type":"postback",
-              "payload":"PAYBILL_PAYLOAD"
+              "payload":"WHO"
             },
             {
-              "title":"History",
+              "title":"Joke",
               "type":"postback",
-              "payload":"HISTORY_PAYLOAD"
+              "payload":"JOKE"
             },
             {
               "title":"Contact Info",
               "type":"postback",
-              "payload":"CONTACT_INFO_PAYLOAD"
+              "payload":"CONTACT"
             }
           ]
         },
