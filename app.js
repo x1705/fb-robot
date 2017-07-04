@@ -552,7 +552,6 @@ function sendEnteredMessage(recipientId,messageText) {
 console.log("sendEnteredMessage "+ messageText);
 
     if( previousMessageHash[recipientId] === 'send a message') {
-         //sendTextMessage(1073962542672604,fistName + " " + lastName + " " + messageText); // send a message to Matthew directly
          sendTextMessage(1073962542672604, messageText); // send a message to Matthew directly
     }
     else if( senderContext[recipientId].state === 'addKeywordStep1') {
@@ -1156,6 +1155,11 @@ function addPersistentMenu(){
       "locale":"default",
       "composer_input_disabled":true,
       "call_to_actions":[
+        {
+          "title":"Home",
+          "type":"postback",
+          "payload":"HOME"
+        },
         {
           "title":"My Account",
           "type":"nested",
