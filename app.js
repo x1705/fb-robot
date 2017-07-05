@@ -1138,7 +1138,7 @@ function addPersistentMenu(){
    }
  }
 }, function(error, response, body) {
-    console.log(response)
+    console.log("Add persistent menu " + response)
     if (error) {
         console.log('Error sending messages: ', error)
     } else if (response.body.error) {
