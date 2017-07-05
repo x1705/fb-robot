@@ -1161,11 +1161,6 @@ function addPersistentMenu(){
           "payload":"HOME"
         },
         {
-          "title":"Remove this menu",
-          "type":"postback",
-          "payload":"remove menu"
-        },
-        {
           "title":"Nested Menu Example",
           "type":"nested",
           "call_to_actions":[
@@ -1175,9 +1170,9 @@ function addPersistentMenu(){
               "payload":"WHO"
             },
             {
-              "title":"Joke",
+              "title":"Remove this menu",
               "type":"postback",
-              "payload":"JOKE"
+              "payload":"remove menu"
             },
             {
               "title":"Contact Info",
