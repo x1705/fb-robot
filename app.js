@@ -1,4 +1,4 @@
-/*   
+e*   
  * Copyright 2016-present, Facebook, Inc.
  * All rights reserved.
  *
@@ -1172,7 +1172,7 @@ function addPersistentMenu(){
             {
               "title":"Remove this menu",
               "type":"postback",
-              "payload":"remove menu"
+              "payload":"REMOVE MENU"
             },
             {
               "title":"Contact Info",
