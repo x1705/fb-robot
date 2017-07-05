@@ -1172,7 +1172,7 @@ function addPersistentMenu(){
             {
               "title":"Remove this menu",
               "type":"postback",
-              "payload":"REMOVE MENU"
+              "payload":"remove menu"
             },
             {
               "title":"Contact Info",
