@@ -1170,9 +1170,9 @@ function addPersistentMenu(){
               "payload":"WHO"
             },
             {
-              "title":"Remove this menu",
+              "title":"Joke",
               "type":"postback",
-              "payload":"remove menu"
+              "payload":"joke"
             },
             {
               "title":"Contact Info",
