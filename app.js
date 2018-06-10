@@ -1326,7 +1326,7 @@ function addKeywordButtonStep2(recipientId, messageText)
    }
 }
 
-function addKeywordButtonStep2(recipientId, buttonCount)
+function addKeywordButtonStep3(recipientId, buttonCount)
 {
    if( senderContext[recipientId].state === "addKeywordButtonStep2")
    {
