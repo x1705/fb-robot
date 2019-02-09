@@ -1,8 +1,8 @@
 {
   "name": "DMS Software Bot",
   "description": "An example Facebook Bot.",
-  "repository": "https://github.com/matthewericfisher/fb-robot",
-  "logo": "https://raw.githubusercontent.com/matthewericfisher/fb-robot/master/img/icon.png",
+  "repository": "https://github.com/x1705/fb-robot",
+  "logo": "https://raw.githubusercontent.com/x1705/fb-robot/master/img/icon.png",
   "env": {
     "APP_SECRET": {
       "description": "The App Secret from the Facebook Settings page",
