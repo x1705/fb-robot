@@ -3,7 +3,7 @@
         "type": "template",
         "payload": {
           "template_type": "button",
-          "text": "Select action",
+          "text": "Select location.",
           "buttons":[{
             "type": "postback",
             "title": "Add new keyword",
