@@ -3,7 +3,7 @@
         "type": "template",
         "payload": {
           "template_type": "button",
-          "text": "REVELATION 22:1 We all die.",
+          "text": "He who has ears, let him give ear to what the Spirit says to the churches. He who overcomes will not come under the power of the second death.",
           "buttons":[{
             "type": "postback",
             "title": "Add new keyword",
